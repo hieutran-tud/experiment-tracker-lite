@@ -6,6 +6,8 @@ Experiment Tracker Lite is a local SQLite registry for machine-learning runs. It
 
 It is intentionally small enough for a personal project while preserving useful engineering properties: a durable relational schema, foreign keys, transactional writes, deterministic best-run selection, and an API that is easy to test.
 
+> Part of the [ML Reliability Toolkit](https://github.com/hieutran-tud/hieutran-tud), a set of focused Python tools for dependable data and machine-learning workflows.
+
 ## Quickstart
 
 ```bash
@@ -37,7 +39,9 @@ with ExperimentStore("experiments.db") as store:
     store.finish_run(run.id)
 ```
 
-## Example output
+## Reproducible example
+
+The included command sequence creates a real SQLite database, records a run, and selects its best completed metric:
 
 A short run lifecycle looks like this:
 
