@@ -8,6 +8,10 @@ It is intentionally small enough for a personal project while preserving useful 
 
 > Part of the [ML Reliability Toolkit](https://github.com/hieutran-tud/hieutran-tud), a set of focused Python tools for dependable data and machine-learning workflows.
 
+## When to use it
+
+Use it for local or single-machine experiments when you need reproducible run metadata without a hosted tracking service.
+
 ## Quickstart
 
 ```bash
@@ -39,7 +43,7 @@ with ExperimentStore("experiments.db") as store:
     store.finish_run(run.id)
 ```
 
-## Reproducible example
+## Proof of use — reproducible example
 
 The included command sequence creates a real SQLite database, records a run, and selects its best completed metric:
 
