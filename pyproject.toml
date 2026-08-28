@@ -7,8 +7,9 @@ name = "experiment-tracker-lite"
 version = "0.1.0"
 description = "A local SQLite experiment tracker for reproducible machine-learning runs."
 readme = "README.md"
+authors = [{ name = "Trung Hieu Tran" }]
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = { file = "LICENSE" }
 dependencies = []
 
 [project.optional-dependencies]
